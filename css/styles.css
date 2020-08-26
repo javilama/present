@@ -1,0 +1,38 @@
+body {
+    background-image: url('../img/black-notepad-on-black-table-3815760.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-maximus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container {
+    padding-top: 100px;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile__img {
+    max-width: 150px;
+    border-radius: 50%;
+    border-width: 5px;
+    border-color: #FFFFFF;
+    border-style: solid;
+}
+
+.info {
+    margin-top: 250px;
+    justify-content: center;
+}
+
+h1,
+h2,
+h3 {
+    color: beige;
+}
