@@ -56,9 +56,11 @@ section {
     text-align: center; 
     
 }
-/* .section_1{
-    background-color: var(--btn-hover);
-} */
+.section_1{
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
 .section_1 span{
     color: var(--main-color);
 }
@@ -71,9 +73,6 @@ section {
     display: flex;
     background-color: var(--btn-hover);
     align-items: center;
-}
-.section_3 {
-    
 }
 .section_3 h2{
  font-size: 2.5em;
@@ -97,12 +96,6 @@ section {
     width: 100%;
     background-color: var(--second-modal-color); 
     transition: transform .3s ease;
-    /* Sale desde arriba ***/
-    /* transform: translate(0,-100%); */
-    /* Sale desde abajo ***/
-    /* transform: translate(0,100%); */
-    /* Sale desde derecha ***/
-    /* transform: translate(100%,0); */
      /* Sale desde izquierda ***/
      transform: translate(-100%,0);
     
@@ -153,6 +146,7 @@ section {
      background-color: var(--main-modal-color);
   }
 
+  /****** CARD ******/  
 .card{
     color: #FFFFFF;
     margin-bottom: 1.5rem;
