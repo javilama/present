@@ -1,104 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-dark>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Pages</title>
+    <script src="https://kit.fontawesome.com/4e019ae75a.js" crossorigin="anonymous"></script>
+    <title>Web Developer</title>
 </head>
 
-<body>
-    <section class="container-max">
-        <div class="container-max_img">
-            <img class="profile__img" src="./img/jam2.png" alt="jairo Avila">
-            <h4 class="pt-5">Hola! Soy <span>Jairo Avila</span></h4>
-            <h2>System Engineer</h2>
-            <h1>Web Developer | Web Master</h1>
-        </div>
-    </section>
-    <section class="container section-2 pt-5 " >
-        <div class="row justify-content-center">
-            <div class="col col-12 col-md-6" >
-              <img src="img/tracker.png" alt="tracker-app">
+<body data-dark>
+    <button class="panel-btn hamburger hamburger--vortex" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <aside  class="panel">
+          <nav class="menu">
+              <a href="#seccion1"> <i class="fas fa-star"></i> Presentación</a>
+              <a href="#seccion2"> <i class="fab fa-react"></i> React JS</a>
+              <a href="#seccion3"> <i class="fab fa-wordpress"></i> Wordpress</a>
+              <a href="#seccion4"> <i class="fas fa-address-card"></i> Quien Soy</a>
+          </nav>
+      </aside>
+      <main>
+        <section id="seccion1" class="section section_1">
+            <div class="">
+                <img src="./img/jam2.png" alt="jairo Avila">
+                <h4 class="pt-5">Hola! Soy <span>Jairo Avila</span></h4>
+                <h2>System Engineer</h2>
+                <h1>Web Developer | Web Master</h1>
             </div>
-            <div class="col col-12 col-md-6 d-flex align-items-center" >
-                <div class="section-2_description">
-                   <h2>TrackerApp</h2>
-                   <p>Me encargaron desarrollar el diseño del login de este aplicativo usando React JS y este es el resultado.</p>
-                       <a href="https://test.trackerapp.co/login" target="_blank" class="btn btn-primary">Ir al sitio...</a>
-               </div>
+        </section>
+        <section id="seccion2" class="section section_2" data-dark>
+            <div class="row justify-content-center">
+                <div class="col col-12 col-md-6 ml-sm-5" >
+                  <img src="img/tracker.png" alt="tracker-app">
+                </div>
+                <div class="col col-12 col-md-6 d-flex align-items-center" >
+                    <div class="description pt-sm-5" >
+                       <h2>TrackerApp</h2>
+                       <p>Me encargaron desarrollar el diseño del login de este aplicativo usando React JS y este es el resultado.</p>
+                           <a href="https://test.trackerapp.co/login" target="_blank" class="btn btn-primary">Ir al sitio...</a>
+                   </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="container-fluid card-section pt-5">
-        <div class="container card-section_cont d-flex justify-content-center p-5 text-center">
-            <h2>Algunos proyectos donde he Trabajado con WordPress</h2>
-        </div>
-        <div class="row">
-            <div class="col-12 col-md-3 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/dranazuluaga.png" class="card-img-top " style="height: 200px;" alt="Sitio Web Dra. Ana Zuluaga">
-                    <div class="card-body">
-                      <h5 class="card-title">Dra. Ana Zuluaga</h5>
-                      <p class="card-text">Creadora y Diseñadora de Sonrisas en Medellín</p>
-                      <a href="http://dranazuluaga.com/" target="_blank" class="btn btn-primary">Ir al sitio...</a>
-                    </div>
-                  </div>
+        </section>
+        <section id="seccion3" class="section">
+            <div class="pb-5">
+                <h2>Algunos proyectos donde he Trabajado con WordPress</h2>
             </div>
-            <div class="col-12 col-md-3 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/mafer.png"  style="height: 200px;" class="card-img-top" alt="Sitio Web Dra.Mafer Camargo">
-                    <div class="card-body">
-                      <h5 class="card-title">Dra. Mafer Camargo</h5>
-                      <p class="card-text">Ortodoncista con 24 años de experiencia en Bogotá.</p>
-                      <a href="https://mafercamargo.com/" target="_blank" class="btn btn-primary">Ir al sitio...</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-12 col-md-3 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/unilaser.png" class="card-img-top" style="height: 200px;" alt="Sitio Web Unilaser Médica">
-                    <div class="card-body">
-                      <h5 class="card-title">Unilaser Médica</h5>
-                      <p class="card-text">Clinica especialista en tratamientos Láser en Bogotá.</p>
-                      <a href="https://unilasermedica.com/"  target="_blank" class="btn btn-primary">Ir al sitio...</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-12 col-md-3 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/oralcountry.png" class="card-img-top" style="height: 200px;" alt="Sitio Web Clinica Oral Country">
-                    <div class="card-body">
-                      <h5 class="card-title">Oral country</h5>
-                      <p class="card-text">Clinica Odontologica con más de 30 años en Bogotá.</p>
-                      <a href="https://oralcountry.com/" target="_blank" class="btn btn-primary">Ir al sitio...</a>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </section>
-    <section class="container-fluid d-flex align-items-center">
-        <div class="row section-3">
-            <div class="col col-12 col-md-10">
-                <div class="section-3_description">
-                    <h2>Quien Soy</h2>
-                    <p>Ingeniero de sistemas con 3 años de experiencia en proyectos de 
-                       TICS dando soporte técnico. Experiencia como Webmaster diseñando, desarrollando y manteniendo
-                       sitios webs para diferentes compañías clientes, usando tecnologías como Wordpress, HTML, CSS, 
-                       y Javascript. Autodidacta, disciplinado y orientado a los objetivos de la compañía. </p>
-                        <div class="d-flex justify-content-center">
-                            <a href="tel:3046421791" class="btn btn-primary btn-lg">Llamar</a>
+            <div class="row">
+                <div class="col-12 col-md-3 d-flex justify-content-center">
+                    <div class="card" data-dark>
+                        <img src="img/dranazuluaga.png" class="card-img-top" alt="Sitio Web Dra. Ana Zuluaga">
+                        <div class="card-body">
+                          <h5 class="card-title">Dra. Ana Zuluaga</h5>
+                          <p class="card-text">Creadora y Diseñadora de Sonrisas en Medellín</p>
+                          <a href="http://dranazuluaga.com/" target="_blank" class="btn btn-primary">Ir al sitio...</a>
                         </div>
-                    </div>
+                      </div>
+                </div>
+                <div class="col-12 col-md-3 d-flex justify-content-center">
+                    <div class="card" data-dark>
+                        <img src="img/mafer.png"  class="card-img-top" alt="Sitio Web Dra.Mafer Camargo">
+                        <div class="card-body">
+                          <h5 class="card-title">Dra. Mafer Camargo</h5>
+                          <p class="card-text">Ortodoncista con 24 años de experiencia en Bogotá.</p>
+                          <a href="https://mafercamargo.com/" target="_blank" class="btn btn-primary">Ir al sitio...</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-md-3 d-flex justify-content-center">
+                    <div class="card" data-dark >
+                        <img src="img/unilaser.png" class="card-img-top" alt="Sitio Web Unilaser Médica">
+                        <div class="card-body">
+                          <h5 class="card-title">Unilaser Médica</h5>
+                          <p class="card-text">Clinica especialista en tratamientos Láser en Bogotá.</p>
+                          <a href="https://unilasermedica.com/"  target="_blank" class="btn btn-primary">Ir al sitio...</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-md-3 d-flex justify-content-center">
+                    <div class="card" data-dark >
+                        <img src="img/oralcountry.png" class="card-img-top" alt="Sitio Web Clinica Oral Country">
+                        <div class="card-body">
+                          <h5 class="card-title">Oral country</h5>
+                          <p class="card-text">Clinica Odontologica con más de 30 años en Bogotá.</p>
+                          <a href="https://oralcountry.com/" target="_blank" class="btn btn-primary">Ir al sitio...</a>
+                        </div>
+                      </div>
+                </div>
             </div>
-        </div>
-    </section>
-    <footer class="container-fluid">
+        </section>
+        <section id="seccion4" class="section section_4" data-dark >      
+                    <div>
+                        <h2>Quien Soy</h2>
+                        <p>Ingeniero de sistemas con 3 años de experiencia en proyectos de 
+                           TICS dando soporte técnico. Experiencia como Webmaster diseñando, desarrollando y manteniendo
+                           sitios webs para diferentes compañías clientes, usando tecnologías como Wordpress, HTML, CSS, 
+                           y Javascript. Autodidacta, disciplinado y orientado a los objetivos de la compañía. </p>
+                            <div class="d-flex justify-content-center">
+                                <a href="tel:3046421791" class="btn btn-primary btn-lg">Llamar</a>
+                            </div>                    
+                    </div>          
+        </section>
+    </main>
+    <button class="scroll-top-btn hidden fas fa-arrow-up"> </button>
+    <button class="dark-theme-btn fas fa-moon "> </button>
+    <footer class="container-fluid" data-dark>
         <h6>Web Developer | Web Master 2020</h6>
     </footer>
+
+<script src="JS/index.js" type="module"  ></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 </body>
